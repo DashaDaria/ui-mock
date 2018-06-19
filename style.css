@@ -146,6 +146,14 @@ body {
 }
 
 @media screen and (max-width: 820px) {
+  .profile-container .profile .content .info .name p {
+    display:inline-block;
+    width:180px;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+  }
+
   .order-filter .caret {
     border-top: 6px solid black;
   }
