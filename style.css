@@ -153,7 +153,7 @@ body {
 
   .profile-container .profile .content .info .name p {
     display:inline-block;
-    width:180px;
+    width: 250px;
     white-space: nowrap;
     overflow:hidden !important;
     text-overflow: ellipsis;
