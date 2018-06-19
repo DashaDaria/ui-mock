@@ -1,16 +1,14 @@
 html {
-  background-color: black;
+  background-color: #201f24;
 }
 
 body {
   color: white;
-  font-family: sans-serif;
-  margin: 20px;
-  margin-bottom: 80px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px 50px 70px 50px;
 }
 
 .navigation {
-  /* position: absolute; */
   width: 100%;
   margin-bottom: 20px;
 }
@@ -18,16 +16,8 @@ body {
 .navigation .logo {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 60px;
-}
-
-.order-filter .bold {
-  font-weight: bold;
-}
-
-.order-filter .small {
-  font-size: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .navigation .logo img {
@@ -37,9 +27,8 @@ body {
 }
 
 .navigation .order-filter {
-  /* position: relative; */
   display: inline-block;
-  width: calc(100% - 65px);
+  width: calc(100% - 45px);
   height: 60px;
   vertical-align: top;
   text-align: right;
@@ -49,7 +38,22 @@ body {
   position: relative;
   display: inline-block;
   line-height: 60px;
-  margin: 0;
+  opacity: 0.75;
+
+}
+
+.order-filter .bold {
+  font-weight: 600;
+}
+
+.order-filter .caret {
+  border-top: 6px solid white;
+  border-left: 5px solid rgba(0, 0, 0, 0);
+  border-right: 5px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 0;
 }
 
 .profile-container {
@@ -60,6 +64,7 @@ body {
   height: 300px;
   margin-bottom: 20px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .profile-container .profile .background {
@@ -72,11 +77,12 @@ body {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+  transform: scale(1.03);
 }
 
 .profile-container .profile .background-one {
   background-image: url('./images/mount.jpg');
-}
+  }
 
 .profile-container .profile .background-two {
   background-image: url('./images/city.jpg');
@@ -95,6 +101,7 @@ body {
 .profile-container .profile .content .info {
   position: absolute;
   margin-left: 40px;
+  margin-top: 20px;
   color: black;
 }
 
@@ -104,15 +111,19 @@ body {
 }
 
 .profile-container .profile .content .info .title p {
-  font-size: 14px;
+  font-size: 18px;
+  padding-left: 1px;
   line-height: 70%;
+  opacity: 0.5;
+  color: #201f24;
 }
 
 .profile-container .profile .content .avatar {
   position: absolute;
   top: calc(50% - 62px);
   left: calc(50% - 62px);
-}
+  filter: drop-shadow(0 0 30px #333);
+ }
 
 .profile-container .profile .content .avatar {
   border-radius: 50%;
@@ -135,6 +146,10 @@ body {
 }
 
 @media screen and (max-width: 820px) {
+  .order-filter .caret {
+    border-top: 6px solid black;
+  }
+
   .profile-container .profile .content .avatar {
     top: calc(50% - 80px);
   }
